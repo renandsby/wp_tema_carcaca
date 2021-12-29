@@ -1,0 +1,388 @@
+:root {
+  --orange: #F26820;
+  --orange-hover: #DD5B17;
+  --blue: #272155;
+  --blue-hover: #1C1741;
+  --dark: #444444;
+}
+
+body {
+  font-family: 'Helvetica Now Display' !important;;
+}
+
+.button-padrao {
+  background: var(--orange);
+  color: #fff;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  border: 0px;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.button-padrao:hover {
+  background: var(--orange-hover);
+}
+
+.button-padrao.button-blue {
+  background: var(--blue);
+}
+
+.button-padrao.button-blue:hover {
+  background: var(--blue-hover);
+}
+
+/* Header */
+
+.header {
+  box-shadow: 0px 4px 39px -10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px 25px 25px 0px;
+  background: #fff;
+  position: fixed;
+  top: 20px;
+  padding: 20px 30px;
+  width: 1300px;
+  max-width: calc(100% - 100px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.header .menu_desktop a{
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+/* Index 1 */
+
+.index_1 {
+  background: url('../img/bg-index_1.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 95vh;
+  padding-top: 250px;
+  position: relative;
+}
+
+.index_1 .cont {
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.index_1 .cont h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.index_1 .cont h1 span {
+  color: #FFE0C7;
+}
+
+.index_1 .cont p {
+  color: #fff;
+}
+
+.index_1 .detalhe {
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+  width: 500px;
+}
+
+.index_1 .man {
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+  width: 650px;
+}
+
+.swiper {
+  padding-bottom: 40px;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+  bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0px;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+}
+
+/* Index 2 */
+
+.index_2 {
+  background: linear-gradient(83.14deg, #FFFFFF 5.31%, #FFFFFF 57.6%, #FFA34F 91.86%);
+  padding: 25px 0px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.index_2 p{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Index 3 */
+
+.index_3 {
+  padding: 80px 0px;
+}
+
+.index_3 .cont {
+  height: 100%;
+  padding: 35px;
+  transition: .4s;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 238, 219, 0.40) 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.index_3 .cont:hover {
+  transform: scale(1.05);
+  background: linear-gradient(180deg, rgba(255, 238, 219, 0.60) 0%, rgba(196, 196, 196, 0) 100%) !important;
+}
+
+.index_3 .row .col-md-4:nth-child(2) .cont {
+  background: #fff;
+}
+
+.index_3 .cont .icon {
+  background: var(--orange);
+  padding: 15px;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items:center;
+  border-radius: 10px;
+}
+
+.index_3 .cont .icon img{
+  margin: 0 auto;
+}
+
+.index_3 .cont h5 {
+  width: calc(100% - 80px - 25%);
+}
+
+.index_3 .cont p {
+  font-size: 17px;
+  text-align: justify;
+  color: #8A8383;
+}
+
+/* Index 4 */
+
+.index_4 {
+  padding: 30px 0px 80px 0px;
+}
+
+.index_4 img {
+  border-radius: 15px;
+}
+
+.index_4 .detalhes_accordion {
+  padding: 30px 80px;
+}
+
+.index_4 .accordion-item {
+  border-bottom: 1px solid #ededed;
+}
+
+.index_4 .accordion-button {
+  border: 0px;
+  box-shadow: none !important;
+  font-size: 19px;
+  font-weight: 400;
+  padding: 30px 0px;
+  margin: 15px 0px;
+}
+
+.index_4 .accordion-button:not(.collapsed) {
+  background: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.index_4 .accordion-button:not(.collapsed)::before {
+  content: "";
+  width: 40px;
+  height: 7px;
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(90.09deg, #FFF500 -5.05%, #EB641E 102.19%);
+  border-radius: 5px;
+}
+
+.index_4 .accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg);
+  fill: #000 !important;
+}
+
+.index_4 .accordion-body {
+  font-size: 18px;
+  color: #8A8383;
+  padding: 0px;
+  padding-bottom: 50px;
+}
+
+/* index 5 */
+
+.index_5 {
+  padding-bottom: 80px;
+}
+
+.index_5 .header-index_5 {
+  background: var(--orange);
+  padding: 50px 0px 0px 0px;
+  margin-bottom: 90px;
+}
+
+.index_5 .buttons {
+  display: flex;
+}
+
+.index_5 .accordion-button {
+  cursor: pointer;
+  background: none !important;
+  color: #fff;
+}
+
+.index_5 .buttons .icon {
+  background: #fff;
+  padding: 15px;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items:center;
+  border-radius: 10px;
+}
+
+.index_5 .accordion-button{
+  transition: .4s;
+}
+
+.index_5 .accordion-button svg{
+  fill: #AFAFAF;
+  margin: 0 auto;
+  transition: .3s;
+}
+
+.index_5 .accordion-button:not(.collapsed) svg{
+  fill: #fff;
+}
+
+.index_5 .accordion-button:not(.collapsed) {
+  position: relative;
+  bottom: -30px;
+  background: #fff !important;
+  border-radius: 10px;
+  height: auto;
+  color: #000 !important;
+  box-shadow: 0px 4px 43px -10px rgba(0, 0, 0, 0.25);
+}
+
+.index_5 .accordion-button:not(.collapsed) .icon{
+  background: var(--orange);
+}
+
+.index_5 .buttons .icon img{
+  margin: 0 auto;
+}
+
+.index_5 .buttons h5 {
+  width: calc(100% - 80px - 25%);
+}
+
+.index_5 .accordion-button::after {
+  display: none;
+}
+
+.index_5 .accordion-body h3{
+  color: #000;
+  font-size: 20px;
+}
+
+.index_5 .accordion-body p{
+  color: #8A8383;
+  font-size: 17px;
+}
+
+/* Index 6 */
+.index_6 {
+  padding-bottom: 80px;
+}
+
+.index_6 .header-index_6{
+  background: url('../img/bg-index_6.jpg') no-repeat;
+  background-size: cover;
+  padding: 80px 0px 180px 0px;
+}
+
+.index_6 .container:nth-child(2){
+  margin-top: -120px;
+}
+
+.index_6 form {
+  background: #fff;
+  box-shadow: 0px 4px 90px -10px rgba(0, 0, 0, 0.15);
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.index_6 input, .index_6 textarea{
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.index_6 .contatos {
+  padding: 20%;
+}
+
+/* Index 7 */
+
+.index_7 {
+  padding-bottom: 80px;
+}
+
+/* Pages */
+
+.page {
+  min-height: 90vh;
+  padding-top: 200px;
+}
+
+.page .empresa img {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.page .empresa {
+  display: flex;
+  align-items:center;
+  height: 100%;
+  width: calc(100% - 100px);
+  border-radius: 10px;
+  margin: 0px 50px;
+  background: url('../img/bg-empresa.jpg') no-repeat;
+  background-size: cover;
+}
+
+/* Footer */
+
+
+.footer {
+  padding: 40px 0px;
+  border-top: 1px solid #EDEDED;
+  background: #fff;
+}
